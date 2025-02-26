@@ -43,7 +43,7 @@ python -m scrapy
 
 O ejecuta el archivo scrapy.exe directamente desde:
 
-venv\Scripts\scrapy.exe
+direccion\proyecto\scrapy.exe startproject nombre_proyecto
 
 2️⃣ Crear un nuevo proyecto Scrapy
 
@@ -52,15 +52,16 @@ cd nombre_proyecto
 
 3️⃣ Crear un spider
 
-scrapy genspider nombre_spider dominio.com
+Dentro de la carpeta spiders, crea un archivo Python para tu Spider. Por ejemplo, noticias_spider.py. 
 
 4️⃣ Ejecutar el spider
 
 scrapy crawl nombre_spider
 
-Si deseas guardar los datos en un archivo JSON:
+Si deseas guardar los datos en un archivo JSON o CSV:
 
 scrapy crawl nombre_spider -o datos.json
+scrapy crawl nombre_spider -o datos.csv
 
 🛠 Solución de problemas
 
